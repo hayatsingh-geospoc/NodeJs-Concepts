@@ -1,21 +1,22 @@
-// let arr = [
-//   {
-//     a: 'hayat',
-//     b: {
-//       a: 'arnab',
-//     },
-//   },
-//   1,
-//   2,
-//   3,
-// ];
-// let b = [...arr];
-// b[0].b.a = 'amit';
+const deepClone = require('lodash/cloneDeep');
 
-// console.log(arr[0]);
+// let a = 10;
+// b = a;
+// b = 20;
 
-const gameEvents = new Map([]);
-console.log(gameEvents);
+// console.log(a, b);
 
-gameEvents.get(5,3);
-console.log(gameEvents);
+let a = {
+  name: 'hayat',
+  rollNo: 24,
+  obj: { name: 'KIngKOng' },
+  getFunc: function () {
+    return this.name;
+  },
+};
+
+let b = deepClone(a); //deep copy
+
+b.obj.name = 'sahil';
+
+console.log(a, b);
