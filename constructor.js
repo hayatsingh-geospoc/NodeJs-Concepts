@@ -1,14 +1,13 @@
+// create a class
 
-// create a class of constructor
-class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    }
-    // create a new object of constructor
-    const person1 = new Person('John', 25);
-    console.log(person1.name); // John
-    console.log(person1.age); // 25
+class Hayat {
+  constructor(name) {
+    this.name = name;
+  }
 
-    
+  SayHello() {
+    console.log(`My name is ${this.name}`);
+  }
+}
+const instance = new Hayat('Hayat');
+console.log(instance.SayHello());
