@@ -1,12 +1,11 @@
-let arr=[1,2,3,4,5,6,5,4,3,2,34]
+// function a(){
 
-for (let i=0;i<arr.length;i++){
-    if(arr[i]>arr[i+1]){
-        temp=arr[i]
-        arr[i]=arr[i+1]
-        arr[i+1]=temp
-        i=-1
-    }
+//    console.log(arguments)
+// }
+
+// console.log(a(1,2))
+
+let a = function b(){
+    console.log("arnab")
 }
-
-console.log(arr)
+// a()
