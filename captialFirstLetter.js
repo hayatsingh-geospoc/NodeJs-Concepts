@@ -1,5 +1,6 @@
+ "use strict"
 let str = "hello world".split(' ')
-
+let g = undefined
 
 for(let i =0;i<str.length;i++){
    
