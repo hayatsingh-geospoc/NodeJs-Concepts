@@ -54,3 +54,12 @@ It can’t be accessible outside the particular block ({block}) */
 // }
 // console.log(a); // 5
 
+
+
+let str = "arnabbiswas";
+let 
+for(let i=0;i<str.length;i++){
+    if(i%2==0){
+        
+    }
+}
