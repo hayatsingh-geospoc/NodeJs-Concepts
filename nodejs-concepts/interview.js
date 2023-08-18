@@ -54,26 +54,50 @@
     
 //     console.log(result);
     
+// function compressString(str) {
+//     let compressed = '';
+//     let count = 1;
+  
+//     for (let i = 1; i < str.length; i++) {
+//       if (str[i] === str[i - 1]) {
+//         count++;
+//       } else {
+//         compressed += str[i - 1] + count;
+//         count = 1;
+//       }
+//     }
+  
+//     // Add the last character and its count
+//     compressed += str[str.length - 1] + count;
+  
+//     return compressed;
+//   }
+  
+//   const inputString = 'aabbcccaa';
+//   const compressedResult = compressString(inputString);
+//   console.log(compressedResult); // Output: "a2b2c3a2"
+  
+
 function compressString(str) {
-    let compressed = '';
-    let count = 1;
+  let compressed = '';
+  let currentChar = str[0];
+  let count = 1;
   
-    for (let i = 1; i < str.length; i++) {
-      if (str[i] === str[i - 1]) {
-        count++;
-      } else {
-        compressed += str[i - 1] + count;
-        count = 1;
-      }
+  for (let i = 1; i < str.length; i++) {
+    if (str[i] === currentChar) {
+      count++;
+    } else {
+      compressed += currentChar + count;
+      currentChar = str[i];
+      count = 1;
     }
-  
-    // Add the last character and its count
-    compressed += str[str.length - 1] + count;
-  
-    return compressed;
   }
   
-  const inputString = 'aabbcccaa';
-  const compressedResult = compressString(inputString);
-  console.log(compressedResult); // Output: "a2b2c3a2"
+  compressed += currentChar + count;
   
+  return compressed;
+}
+
+const inputString = 'aabbbccccaaaaaa';
+const compressedResult = compressString(inputString);
+console.log(compressedResult); // Output: a2b3c4
