@@ -1,6 +1,7 @@
-let arr = [1,2,3,4];
-let r  ="-";
+let arr = [1, 2, 3, 4, 7, 6, 1, 3, 1];
 
-let pushr = arr.push(r)
-console.log(pushr);
-console.log(arr)
+let data = arr.filter((ele, index) => {
+  return arr.indexOf(ele) === index;
+});
+
+console.log(data);
