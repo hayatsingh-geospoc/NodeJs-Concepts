@@ -46,7 +46,12 @@ let a = (arr) => {
   return obj;
 };
 
-a(arr);
-for (let j in obj) {
-  console.log(j);
-}
+
+console.log(a(arr))
+// a(arr);
+// for (let j in obj) {
+//   console.log(j);
+// }
+
+
+
