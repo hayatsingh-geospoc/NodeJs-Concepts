@@ -4,4 +4,6 @@ let data = arr.filter((ele, index) => {
   return arr.indexOf(ele) === index;
 });
 
+
+
 console.log(data);
