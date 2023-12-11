@@ -10,6 +10,8 @@ var lengthOfLongestSubstring = function(s) {
       charMap[s[right]] = right;
       maxLength = Math.max(maxLength, right - left + 1);
     }
+
+    
   
     return maxLength;
   };
