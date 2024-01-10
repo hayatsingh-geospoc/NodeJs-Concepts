@@ -32,6 +32,8 @@ const myPromise = new Promise((resolve, reject) => {
   // If an error occurs, call reject(reason)
 });
 
+
+
 myPromise
   .then((result) => {
     // Do something with the result
