@@ -9,7 +9,7 @@ function fetchData() {
   
         // Uncomment the line below to simulate a failure (reject the Promise)
         // reject(new Error('Failed to fetch data!'));
-      }, 2000);
+      }, 5000);
     });
   }
   
