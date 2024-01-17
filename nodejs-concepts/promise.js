@@ -2,7 +2,7 @@
 
 
 const data = new Promise((res,rej)=> {
-    let temp = true;
+    let temp = false;
     if(temp) {
         res()
     } else {
@@ -10,8 +10,8 @@ const data = new Promise((res,rej)=> {
     }
 })
 
-data.then((res)=>{
-    console.log(res)
-}).catch((rej)=>{
-    console.log(rej)
+data.then(()=>{
+    console.log('work')
+}).catch(()=>{
+    console.log('not working')
 })
