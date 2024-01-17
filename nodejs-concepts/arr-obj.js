@@ -32,7 +32,7 @@ const arrayOfObjects = [
 
 
 
-let data = arrayOfObjects.map((datas,index)=> {
+let data = arrayOfObjects.filter((datas,index)=> {
 
      return datas.address.zip > 5
 
